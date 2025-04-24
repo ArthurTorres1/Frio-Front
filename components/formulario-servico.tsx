@@ -146,7 +146,7 @@ export function FormularioServico() {
         description: "Aguarde enquanto o recibo está sendo gerado...",
       })
 
-      const response = await fetch("/api/gerar-recibo", {
+      const response = await fetch("https://frio-api.onrender.com/api/Recibos", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
