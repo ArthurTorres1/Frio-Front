@@ -35,10 +35,10 @@ export async function POST(request: NextRequest) {
     // Em ambiente de desenvolvimento, tenta chamar a API local
     if (isDevelopment()) {
       try {
-        console.log("Ambiente de desenvolvimento: Chamando API local")
-        console.log("Chamando API externa: http://localhost:5207/api/Recibos")
+        console.log("Ambiente de desenvolvimento: Chamando API ")
+        console.log("Chamando API externa: https://frio-api.onrender.com/api/Recibos")
 
-        const apiResponse = await fetch("http://localhost:5207/api/Recibos", {
+        const apiResponse = await fetch("https://frio-api.onrender.com/api/Recibos", {
           method: "POST",
           headers: {
             "Content-Type": "application/json",
